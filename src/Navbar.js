@@ -1,21 +1,21 @@
 import { Button } from "./Button";
 
-export function Navbar({ showSearchPage, handleSearchPage, image }) {
+export function Navbar({ image, newImage, setNewImage }) {
   const handleDownload = function () {
     if (!image || image === "sample.jpg") return;
     const link = document.createElement("a");
-    link.href = image;
+    link.href = newImage;
     link.download = "generated_image.png";
     link.click();
   };
   return (
-    <nav className={showSearchPage ? "searchNav" : "normal"}>
-      {showSearchPage ? (
+    <nav className={newImage ? "searchNav" : "normal"}>
+      {newImage ? (
         <>
           <Button
             className="btnBack show"
             onClick={() => {
-              handleSearchPage(false);
+              setNewImage(null);
             }}
           >{`< Back`}</Button>
           <Button

@@ -1,6 +1,7 @@
-export async function clipBoardAPI(prompt) {
+export async function clipBoardAPI(file) {
+  console.log(file);
   const form = new FormData();
-  form.append("prompt", prompt);
+  form.append("image_file", file);
   const response = await fetch(process.env.REACT_APP_API_URL, {
     method: "POST",
     headers: {
@@ -8,7 +9,6 @@ export async function clipBoardAPI(prompt) {
     },
     body: form,
   });
-  console.log("Remaining API Credits: " + [...response.headers][2][1]);
   console.log(
     "Got " +
       response.status +
