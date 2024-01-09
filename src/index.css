@@ -132,7 +132,7 @@ input {
 
 img {
   height: 512px;
-  width: 512px;
+  width: 600px;
   border-radius: 0.75rem;
 }
 
@@ -192,5 +192,5 @@ form {
 }
 
 .original-image {
-  margin-right: 45px;
+  margin-right: 120px;
 }
