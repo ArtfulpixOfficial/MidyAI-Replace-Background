@@ -6,7 +6,7 @@ export function Message() {
         MIDYAI SDXL
       </h1>
       <h2 className="text-xl font-semibold text-gray-600 dark:text-gray-400">
-        Create multiple variations from a single image with Stable Diffusion.
+        Teleport anything, anywhere with AI
       </h2>
     </section>
   );

@@ -1,6 +1,16 @@
 import { Button } from "./Button";
 
-export function Navbar({ image, newImage, setNewImage }) {
+export function Navbar({
+  image,
+  handleOriginalImage,
+  newImage,
+  handleNewImage,
+}) {
+  const reset = function () {
+    handleOriginalImage(null);
+    handleNewImage(null);
+  };
+
   const handleDownload = function () {
     if (!image || image === "sample.jpg") return;
     const link = document.createElement("a");
@@ -12,12 +22,7 @@ export function Navbar({ image, newImage, setNewImage }) {
     <nav className={newImage ? "searchNav" : "normal"}>
       {newImage ? (
         <>
-          <Button
-            className="btnBack show"
-            onClick={() => {
-              setNewImage(null);
-            }}
-          >{`< Back`}</Button>
+          <Button className="btnBack show" onClick={reset}>{`< Back`}</Button>
           <Button
             className="btnDownload show"
             onClick={handleDownload}
