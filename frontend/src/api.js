@@ -2,7 +2,7 @@ export async function clipBoardAPI(image_url, prompt = "") {
   if (!image_url) return;
   const {
     result: { image: imageUrl },
-  } = await fetch(`http://localhost:3001/api/convert`, {
+  } = await fetch(`https://midy-ai-replace-background-backend.vercel.app/api/convert`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
