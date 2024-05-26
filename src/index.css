@@ -194,3 +194,75 @@ form {
 .original-image {
   margin-right: 120px;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .normal,
+  .searchNav {
+    padding: 20px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  input {
+    width: 80vw;
+  }
+  .imageSection {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 95%;
+  }
+  .imageSection > div {
+    width: 100% !important;
+    height: fit-content;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .original-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .normal,
+  .searchNav {
+    padding: 10px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  input {
+    width: 90vw;
+  }
+  .imageSection {
+    margin-top: 90px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .imageSection > div {
+    width: 100% !important;
+    height: fit-content;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  form {
+    gap: 10px;
+  }
+  .original-image {
+    margin-bottom: 10px;
+  }
+}
