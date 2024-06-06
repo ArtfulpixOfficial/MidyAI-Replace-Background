@@ -231,13 +231,10 @@ form {
     margin-bottom: 20px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .normal,
   .searchNav {
-    padding: 10px;
-    flex-direction: column;
-    gap: 30px;
+    padding: 0 20px;
   }
   .btn {
     font-size: 12px;
@@ -246,7 +243,6 @@ form {
     width: 90vw;
   }
   .imageSection {
-    margin-top: 90px;
     margin-bottom: 10px;
     width: 90%;
   }
@@ -264,5 +260,8 @@ form {
   }
   .original-image {
     margin-bottom: 10px;
+  }
+  .message {
+    text-align: center;
   }
 }
