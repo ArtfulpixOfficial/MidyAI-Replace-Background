@@ -6,7 +6,7 @@ export function Message() {
         MIDYAI REPLACE BACKGROUND
       </h1>
       <h2 className="text-xl font-semibold text-gray-600 dark:text-gray-400">
-        Teleport anything, anywhere with AI
+        Move anything effortlessly across space with AI
       </h2>
     </section>
   );
